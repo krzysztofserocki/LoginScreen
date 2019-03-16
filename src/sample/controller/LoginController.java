@@ -29,6 +29,11 @@ public class LoginController {
 
     @FXML
     void initialize() {
+
+        loginUsername.setStyle("-fx-text-inner-color: #000000");
+        loginPassword.setStyle("-fx-text-inner-color: #000000");
+
+
         loginButton.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
