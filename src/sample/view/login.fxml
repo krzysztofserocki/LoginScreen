@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #5ddef4;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #5ddef4;" xmlns="http://javafx.com/javafx/9.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.LoginController">
    <children>
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="222.0" layoutY="53.0" prefHeight="35.0" prefWidth="255.0" text="Login" textAlignment="CENTER" textFill="WHITE">
          <font>
@@ -31,14 +31,19 @@
             <Font size="14.0" />
          </font>
       </JFXTextField>
-      <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="265.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../assets/user.png" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="154.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="270.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../assets/icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="159.0" layoutY="122.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-name-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="159.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8-password-64%20(1).png" />
          </image>
       </ImageView>
    </children>
