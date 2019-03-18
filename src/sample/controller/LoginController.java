@@ -57,17 +57,23 @@ public class LoginController {
         if(!loginUsername.getText().toString().trim().equals("")
                 && !loginPassword.getText().toString().trim().equals("")) {
             // We are ready to go!
-            Stage detailsStage = new Stage();
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/sample/view/details.fxml"));
             try {
-                Parent root = FXMLLoader.load(getClass().getResource("/sample/view/details.fxml"));
+                loader.load();
 
-                Scene scene = new Scene(root);
-                detailsStage.setScene(scene);
-                detailsStage.show();
-                detailsStage.setResizable(false);
             } catch (IOException e) {
                 e.printStackTrace();
             }
+
+            Parent root = loader.getRoot();
+            Stage stage = new Stage();
+            stage.setScene(new Scene(root));
+
+            DetailsController detailsController = loader.getController();
+            detailsController.setName(loginUsername.getText());
+            stage.show();
+
         }
     }
 
