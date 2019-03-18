@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
@@ -7,9 +8,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #5ddef4;" xmlns="http://javafx.com/javafx/9.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.DetailsController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #5ddef4;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.DetailsController">
    <children>
-      <Label fx:id="detailsWelcomeLabel" alignment="CENTER" layoutX="426.0" layoutY="14.0" prefHeight="23.0" prefWidth="160.0" text="Welcome!!!" textAlignment="CENTER">
+      <Label fx:id="detailsWelcomeLabel" alignment="CENTER" layoutX="323.0" layoutY="14.0" prefHeight="23.0" prefWidth="263.0" text="Welcome!!!" textAlignment="CENTER">
          <font>
             <Font name="System Bold Italic" size="15.0" />
          </font>
@@ -24,9 +25,9 @@
                   <Image url="@../assets/myPhoto.jpg" />
                </image>
             </ImageView>
-            <Label fx:id="detailsName" layoutX="178.0" layoutY="41.0" prefHeight="30.0" prefWidth="131.0" text="Name:" textFill="#2c4e6b" />
+            <Label fx:id="detailsName" layoutX="178.0" layoutY="41.0" prefHeight="30.0" prefWidth="351.0" text="Name:" textFill="#2c4e6b" />
             <Label fx:id="detailsAge" layoutX="178.0" layoutY="74.0" prefHeight="23.0" prefWidth="131.0" text="Age:" textFill="#2c4e6b" />
-            <Label fx:id="detailsProfession" layoutX="178.0" layoutY="106.0" prefHeight="23.0" prefWidth="131.0" text="Profession:" textFill="#2c4e6b" />
+            <Label fx:id="detailsProfession" layoutX="178.0" layoutY="106.0" prefHeight="23.0" prefWidth="343.0" text="Profession:" textFill="#2c4e6b" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="193.0" layoutY="227.0" prefHeight="159.0" prefWidth="389.0" style="-fx-background-color: #fff;">
@@ -34,12 +35,7 @@
             <DropShadow />
          </effect>
          <children>
-            <Label fx:id="detailsGit" layoutX="56.0" layoutY="64.0" text="github.com/krzysztofserocki" textFill="#2c4e6b" underline="true">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label fx:id="detailsIn" layoutX="56.0" layoutY="109.0" text="https://www.linkedin.com/in/krzysztofserocki/" textFill="#2c4e6b" underline="true">
+            <Label layoutX="56.0" layoutY="64.0" textFill="#2c4e6b" underline="true">
                <font>
                   <Font size="15.0" />
                </font>
@@ -63,6 +59,16 @@
                   </Label>
                </children>
             </AnchorPane>
+            <Hyperlink fx:id="detailsGit" layoutX="56.0" layoutY="58.0" text="github.com/krzysztofserocki" textFill="#2c4e6b" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="detailsIn" layoutX="56.0" layoutY="105.0" text="linkedin.com/in/krzysztofserocki/" textFill="#2c4e6b" underline="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Hyperlink>
          </children>
       </AnchorPane>
    </children>

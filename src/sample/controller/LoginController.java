@@ -71,7 +71,7 @@ public class LoginController {
             stage.setScene(new Scene(root));
 
             DetailsController detailsController = loader.getController();
-            detailsController.setName(loginUsername.getText());
+            detailsController.setName(loginUsername.getText(), "Computer Science student, Future Java developer.", 21);
             stage.show();
 
         }
